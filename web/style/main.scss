@@ -1,0 +1,26 @@
+@import './header.scss';
+
+@import './footer.scss';
+
+@import './page/chart-page.scss';
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Helvetica Neue", Arial;
+  font-size: 13px;
+  overflow-x: hidden;
+  background-color: #171717;
+}
+
+a {
+  cursor: pointer;
+}
+
+* {
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
