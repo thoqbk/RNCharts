@@ -39,7 +39,12 @@ let getPoints = (state, action) => {
 
 // Utils -----------------------------------------------------------------------
 let loadPoints = () => {
-  let points = require('../../config/sampleLineChartData.js').default;
+  let points = {
+    ...require('../../config/sampleLineChartData.js').default
+  }
+  points.barChartData = require('../../config/sampleBarChartData.js').default
+  points.areaChartData = require('../../config/sampleAreaChartData.js').default
+  points.pieChartData = require('../../config/samplePieChartData.js').default
   for(let key of Object.keys(points)) {
     let data = points[key];
     if(!Array.isArray(data) || data.length == 0) {
