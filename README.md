@@ -1,7 +1,7 @@
 # Using Recharts in React Native project
 
 ### 1. Introduction to Recharts:
-Recharts is a chart library built with React and D3. Recharts supports many kinds of chart such as AreaChart, BarChart, LineChart, and PieChart. The strength of Recharts is easy to extend and customize. For example, we can change active cursor, legend, and tick in Axises to our own component and styling. Following is an example of how to customize tick in XAxis:
+Recharts (http://recharts.org) is a chart library built with React and D3. Recharts supports many kinds of chart such as AreaChart, BarChart, LineChart, and PieChart. The strength of Recharts is easy to extend and customize. For example, we can change active cursor, legend, and tick in Axises to our own component and styling. Following is an example of how to customize tick in XAxis:
 
 ```javascript
 const CustomizedAxisTick = React.createClass({
@@ -114,6 +114,7 @@ componentWillUnmount() {
 ```
 
 After all, here’re the results:
+
 Line Chart and Bar Chart:
 
 ![Line Chart and Bar Chart](https://github.com/thoqbk/RNCharts/blob/master/resources/charts-1.png)
@@ -150,7 +151,7 @@ this.unlock = function() {
 }
 ```
 
-In ChartScene.js, store 'locked' value in component state and set it to WebViewBridge.scrollEnabled:
+In ChartScreen.js, store 'locked' value in component state and set it to WebViewBridge.scrollEnabled:
 ```javascript
 // File: screens/ChartScreen.js
 render() {
