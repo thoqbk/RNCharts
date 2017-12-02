@@ -4,21 +4,17 @@
 `Step 1.` Start Web part: Open terminal, change current directory to RNCharts/web directory
 
 Run `yarn` to install all depdendencies
-
 Run `yarn start` to start web part
 
 `Step 2.` Start React Native part: Open new terminal, change current directory to RNCharts directory:
 
 Run `yarn` to install all dependencies
-
 Run `yarn start` to start React Native part
 
 `Step 3.` Run on emulartor: Open new terminal, change current directory to RNCharts directory:
 
 Run `react-native run-ios` to run app on iOS emulator
-
 To run app on Android emulator, goto RNCharts/config/app.js change `chartPage` to `http://10.0.2.2:9000`
-
 Run `react-native run-android`
 
 ### 1. Introduction to Recharts:
