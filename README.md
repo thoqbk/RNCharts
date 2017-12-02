@@ -18,14 +18,14 @@ const CustomizedAxisTick = React.createClass({
 });
 
 const SimpleLineChart = React.createClass({
-    render () {
-  	    return  <LineChart>
-  	        <XAxis dataKey="name" tick={<CustomizedAxisTick/>}/>
-  	        <YAxis/>
-  	        <CartesianGrid />
-  	        <Line type="monotone" dataKey="pv" />
-        </LineChart>
-    }
+  render () {
+    return <LineChart>
+        <XAxis dataKey="name" tick={<CustomizedAxisTick/>}/>
+        <YAxis/>
+        <CartesianGrid />
+        <Line type="monotone" dataKey="pv" />
+    </LineChart>
+  }
 });
 ```
 Find more examples here http://recharts.org/#/en-US/examples and full Recharts API here http://recharts.org/#/en-US/api
