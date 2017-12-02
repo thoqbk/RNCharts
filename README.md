@@ -32,6 +32,7 @@ Find more examples here http://recharts.org/#/en-US/examples and full Recharts A
 
 ### 2. Project Structure:
 In my React Native project, I add ‘web' directory for React project which uses Recharts library:
+
 ![Structure](https://github.com/thoqbk/RNCharts/blob/master/resources/structure.png)
 
 In development, web part runs at port 9000 and loaded by React Native code by Webview Bridge component (https://github.com/alinz/react-native-webview-bridge) . I choose Webview Bridge over built-in Webview (https://facebook.github.io/react-native/docs/webview.html) because it supports communication between React Native and Web part. For example, when a user clicks on a custom button in chart component we want to change the screen to another Scene or when he clicks on Navigation Button, chart content will be changed. All these things can do with Webview Bridge. Below is an example of how to work with Webview Bridge:
@@ -114,9 +115,11 @@ componentWillUnmount() {
 
 After all, here’re the results:
 Line Chart and Bar Chart:
+
 ![Line Chart and Bar Chart](https://github.com/thoqbk/RNCharts/blob/master/resources/charts-1.png)
 
 AreaChart and PieChart:
+
 ![AreaChart and PieChart](https://github.com/thoqbk/RNCharts/blob/master/resources/charts-2.png)
 
 ### 4. Patch Recharts to support iOS gesture:
