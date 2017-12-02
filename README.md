@@ -3,19 +3,15 @@
 ### 0. Get started:
 `Step 1.` Start Web part: Open terminal, change current directory to RNCharts/web directory
 
-Run `yarn` to install all depdendencies
-Run `yarn start` to start web part
+Run `yarn` to install all depdendencies. Run `yarn start` to start web part
 
 `Step 2.` Start React Native part: Open new terminal, change current directory to RNCharts directory:
 
-Run `yarn` to install all dependencies
-Run `yarn start` to start React Native part
+Run `yarn` to install all dependencies. Run `yarn start` to start React Native part
 
 `Step 3.` Run on emulartor: Open new terminal, change current directory to RNCharts directory:
 
-Run `react-native run-ios` to run app on iOS emulator
-To run app on Android emulator, goto RNCharts/config/app.js change `chartPage` to `http://10.0.2.2:9000`
-Run `react-native run-android`
+Run `react-native run-ios` to run app on iOS emulator. To run app on Android emulator, goto RNCharts/config/app.js change `chartPage` to `http://10.0.2.2:9000`. Run `react-native run-android`
 
 ### 1. Introduction to Recharts:
 Recharts (http://recharts.org) is a chart library built with React and D3. Recharts supports many kinds of chart such as AreaChart, BarChart, LineChart, and PieChart. The strength of Recharts is easy to extend and customize. For example, we can change active cursor, legend, and tick in Axises to our own component and styling. Following is an example of how to customize tick in XAxis:
