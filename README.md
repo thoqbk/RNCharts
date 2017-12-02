@@ -47,7 +47,7 @@ In my React Native project, I add ‘web' directory for React project which uses
 
 ![Structure](https://github.com/thoqbk/RNCharts/blob/master/resources/structure.png)
 
-In development, web part runs at port 9000 and loaded by React Native code by Webview Bridge component (https://github.com/alinz/react-native-webview-bridge) . I choose Webview Bridge over built-in Webview (https://facebook.github.io/react-native/docs/webview.html) because it supports communication between React Native and Web part. For example, when a user clicks on a custom button in chart component we want to change the screen to another Scene or when he clicks on Navigation Button, chart content will be changed. All these things can do with Webview Bridge. Below is an example of how to work with Webview Bridge:
+In development, web part runs at port 9000 and loaded by Webview Bridge component in React Native part (https://github.com/alinz/react-native-webview-bridge) . I choose Webview Bridge over built-in Webview (https://facebook.github.io/react-native/docs/webview.html) because it supports communication between React Native and Web part. For example, when a user clicks on a custom button in chart component we want to change the screen to another Scene or when he clicks on Navigation Button, chart content will be changed. All these things can do with Webview Bridge. Below is an example of how to work with Webview Bridge:
 
 In Web part: listen and send a message to React Native part:
 ```javascript
